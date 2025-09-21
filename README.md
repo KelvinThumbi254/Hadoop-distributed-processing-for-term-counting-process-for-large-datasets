@@ -18,6 +18,8 @@ The output file has the count of the genome of GO:0030420, If a bacterium has mo
 number of the gene associated with GO:0030420; establishment of competence for 
 transformation, it means that the bacterium has an increased ability to take up exogenous DNA 
 from its environment and the results are as follows;
+
+
 :~ $ bin/Hadoop fs -cat output/part-r-00000
 Bacillus_amyloliquefaciens_FZB42-326423 8
 Bacillus_licheniformis_ATCC_14580-27901 7 
@@ -26,6 +28,8 @@ Bacillus_subtilis_168-224308 56
 Escherichia_coli_K-12_ecocyc_83333 2
 Geobacillus_kaustophilus_HTA426-235909 9
 Geobacillus_thermodenitrificans_NG80_2-420246 8
+
+
    
 Bacteria Bacillus_subtilis_168-224308 has more GO:0030420 than any other Bacteria meaning it 
 has an increased ability to take up exogenous DNA from its environment than any of the other 6 
