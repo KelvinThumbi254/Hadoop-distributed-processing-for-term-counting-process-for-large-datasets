@@ -1,0 +1,38 @@
+:~/hadoop $ history
+    1  wget https://www.mirrorservice.org/sites/ftp.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz
+    2  tar -zxvf hadoop-3.4.1.tar.gz
+    3  mv hadoop-3.4.1 hadoop
+    4  sudo apt-get update
+    5  sudo apt-get install default-jre
+    6  sudo apt-get install default-jdk
+    7  java -version
+    8  /usr/libexec/java_home
+    9  export JAVA_HOME=/usr/lib/jvm/default-java
+   10  export PATH=$PATH:$JAVA_HOME/bin
+   11  export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar
+   12  pwd
+   13  cd hadoop
+   14  ls -la
+   15  mkdir input
+   16  cd input
+   17  ls -ls
+   18  ls -la
+   19  cd ..
+   20  cd input
+   21  ls -la
+   22  pico CountSpecificTerm.java
+   23  rm -r CountSpecificTerm.java
+   24  ls -la
+   25  cd ..
+   26  pico CountSpecificTerm.java
+   27  ls -la
+   28  bin/hadoop com.sun.tools.javac.Main CountSpecificTerm.java
+   29  jar -cvf CountSpecificTerm.jar *.class
+   30  ls -la
+   31  bin/hadoop jar CountSpecificTerm.jar CountSpecificTerm input output
+   32  bin/hadoop fs -cat output/part-r-00000
+   33  history
+   
+   scp -i .\vockey.pem *.gaf ubuntu@ec2-54-166-136-205.compute-1.amazonaws.com:/home/ubuntu/hadoop/input/
+   scp -i vockey.pem -r ubuntu@ec2-54-166-136-205.compute-1.amazonaws.com:/home/ubuntu/hadoop/output .
+   
