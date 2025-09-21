@@ -12,7 +12,8 @@ format.
 4. Bacillus_subtilis_168-224308 
 5. Escherichia_coli_K-12_ecocyc_83333 
 6. Geobacillus_kaustophilus_HTA426-235909 
-7. Geobacillus_thermodenitrificans_NG80_2-420246 
+7. Geobacillus_thermodenitrificans_NG80_2-420246
+   
 The output file has the count of the genome of GO:0030420, If a bacterium has more copies or 
 number of the gene associated with GO:0030420; establishment of competence for 
 transformation, it means that the bacterium has an increased ability to take up exogenous DNA 
