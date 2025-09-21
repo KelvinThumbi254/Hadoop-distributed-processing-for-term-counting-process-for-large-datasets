@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 The application processes genomic-related text files using Hadoop to perform distributed 
 computation. Specifically, the task is to count occurrences of specific terms, “GO:0030420” term 
 within source data files. 
